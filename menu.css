@@ -33,6 +33,26 @@
   display: flex;
   align-items: flex-start;
 }
+
+/* start of the code */
+
+.menu-container12 a{
+    padding: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-container12 .active{
+    background-color: rgba(225, 0, 225, 0.469);
+}
+
+.menu-container12 a:hover:not(.active){
+    background-color: rgba(0, 0, 0, 0.265);
+}
+/* Rest of the code */
+
+
+
 .menu-container13 {
   flex: 0 0 auto;
   width: 200px;
