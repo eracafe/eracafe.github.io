@@ -52,7 +52,6 @@
   overflow: auto;
   align-self: center;
   align-items: flex-start;
-  border-left-width: 0px;
   border-color: var(--dl-color-theme-neutral-dark);
   border-style: inset;
   border-width: 1px;
@@ -61,6 +60,7 @@
   justify-content: space-between;
   border-top-width: 0px;
   border-right-width: 0px;
+  border-left-width: 0px;
 }
 .menu-space02 {
   flex: 0 0 auto;
