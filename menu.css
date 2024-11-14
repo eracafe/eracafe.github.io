@@ -52,7 +52,7 @@
   overflow: auto;
   align-self: center;
   align-items: flex-start;
-  border-left: 0px;
+  border-left-width: 0px;
   border-color: var(--dl-color-theme-neutral-dark);
   border-style: inset;
   border-width: 1px;
