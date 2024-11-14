@@ -8,11 +8,11 @@
     <meta property="twitter:card" content="summary_large_image" />
 
     <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
     </style>
     <style data-tag="default-style-sheet">
       html {
-        font-family: Inter;
+        font-family: "Noto Sans";
         font-size: 16px;
       }
 
@@ -35,22 +35,12 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       data-tag="font"
     />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       data-tag="font"
     />
     <link
@@ -65,447 +55,343 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
-
-<style>
-    
-   
-    #cold-content-container
-    {
-    height:100%;
-    width:100%;
-    padding:1px;
-    background-color:#B5EECB;
-    }
-    #hot-content-container
-    {
-    height:100%;
-    width:100%;
-    padding:1px;
-    background-color:#1F3541;
-    }
-   
-  
-    
-    .sidebar-navigation-buttons
-    {
-    height:100px;
-    width:100px;
-    position:absolute;
-    top:33.3%;
-    left:10px;
-    margin-left:12px;
-    rotate:90deg;
-    }
-    
-    .sidebar-section-button
-    {
-    color:whitesmoke;
-    background:none;
-    border:none;
-    font-family:Rajdhani;
-    font-size:22.5px;
-    width:100px;
-    height:33px;
-    margin-bottom:3px;
-    display: inline-block;
-    transition: 0.3s;
-    }
-    .sidebar-section-button:hover
-    {
-    background-color: rgba(225, 239, 250, 0.6);
-    color:white;
-    font-weight: 200;
-    }
-    
-    .sidebar-section-button-selected
-    {
-    color:whitesmoke;
-    background:none;
-    border:1px solid transparent;
-    font-family:Rajdhani;
-    font-size:22.5px;
-    width:100px;
-    height:33px;
-    margin-bottom:3px;
-    display: inline-block;
-    transition: 0.3s;
-    }
-    .sidebar-section-button-selected:hover
-    {
-    border:1px solid rgba(225, 239, 250, 0.6);
-    color:white;
-    margin-bottom:2.5px;
-    }
-
-     #project-content-container, #contact-content-container{
-      min-height: 100vh;
-    }
-
-    #cold-content-container{
-      background: rgb(172, 187, 253)
-    }
-
-    #hot-content-container{
-      background: rgb(168, 253, 242)
-    }
-
-    /* put the style in the active class that you want to see in your links when scroll */
-    .active{
-      border: 1px solid rgba(1, 255, 35, 0.61);
-    }
-  </style>
-    
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
     <div>
       <link href="./menu.css" rel="stylesheet" />
 
-      <div class="menu-container10">
-        <div class="menu-container11">
-          <div class="menu-nav-bar2">
+      <div class="menu-container">
+        <div class="menu-mnav0">
+          <div class="menu-mnav1">
             <img
               src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-              class="menu-placeholder-image10 thq-img-ratio-1-1"
+              class="menu-meralogo thq-img-ratio-1-1"
             />
-            <animate-on-reveal
-              animation="rubberBand"
-              duration="300ms"
-              delay="10ms"
-            >
-              <h1 data-thq-animate-on-reveal="true" class="menu-text100">
-                Erā Cafe
-              </h1>
-            </animate-on-reveal>
-            <a href="index.html" class="menu-navlink">
+            <h1 class="menu-meratitle">Erā Cafe</h1>
+            <a href="index.html" class="menu-mb2h-btn">
               <span>
                 <br />
                 <br />
               </span>
             </a>
           </div>
-          
-          <div id="menu-container12" class="menu-container12">
-            <!-- buttons are wrapped with anchor tags for onclick section scroll -->
-            <div class="menu-container13"></div>
-            <a href="#dessert" class="menu-bdessert">حلويات</a>
-            <a href="#brewing" class="menu-bbrewing">قهوة مقطره</a>
-            <a href="#energy" class="menu-benergy">مشروبات طاقة</a>
-            <a href="#cocktails" class="menu-bcocktails">كوكتيل</a>
-            <a href="#smoothie" class="menu-bsmoothie">سموذي</a>
-            <a href="#mojito" class="menu-bmojito">موهيتو</a>
-            <!-- <a href="#cold" class="menu-bcold">مشروبات باردة</a> -->
-            <a href="#cold-content-container"><button id="sidebar-navigation-to-cold" class="sidebar-section-button"
-      onclick="ScrollToCold()">cold new</button></a>
-           <!-- <a href="#hot" class="menu-bhot">مشروبات ساخنة</a> -->
-            <a href="#hot-content-container"><button id="sidebar-navigation-to-hot" class="sidebar-section-button"
-      onclick="ScrollToHot()">hot new</button></a>
+          <div class="menu-mnav2">
+            <div class="menu-space02"></div>
+            <a href="#dessert" class="menu-dessert-btn">حلويات</a>
+            <a href="#brewing" class="menu-brewing-btn">قهوة مقطره</a>
+            <a href="#energy" class="menu-energy-btn">مشروبات طاقة</a>
+            <a href="#cocktails" class="menu-cocktails-btn">كوكتيل</a>
+            <a href="#smoothie" class="menu-smoothie-btn">سموذي</a>
+            <a href="#mojito" class="menu-mojito-btn">موهيتو</a>
+            <a href="#cold" class="menu-cold-btn">مشروبات باردة</a>
+            <a href="#hot" class="menu-hot-btn">مشروبات ساخنة</a>
           </div>
-          
         </div>
-        <div class="menu-container14">
-          <div id="hot"   <!--class="menu-container15"> -->   class="page-section"  </div>
-          <div class="menu-max-width thq-section-max-width">
-            <div class="menu-content10">
-              <div class="menu-hot">
-                <h1 class="menu-text104">Hot Drinks - مشروبات ساخنة</h1>
-                <div class="menu-row1">
-                  <div class="menu-container16">
-                    <div class="menu-card17">
+        <div class="menu-menu-bg">
+          <div id="hot" class="menu-space-bg1"></div>
+          <div class="menu-menu-mw thq-section-max-width">
+            <div class="menu-menu-cont">
+              <div class="menu-hot-cont">
+                <h1 class="menu-hot-t">Hot Drinks - مشروبات ساخنة</h1>
+                <div class="menu-hot-items0">
+                  <div class="menu-hot-items1">
+                    <div class="menu-hi1-cont0">
                       <img
                         src="https://images.msha.ke/ef579b67-b8c9-4f8b-ae18-fe2fd9e69be9?"
-                        class="menu-placeholder-image11 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi1-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content11">
-                        <div class="menu-title10">
-                          <span class="menu-text105 thq-body-small">
+                      <div class="menu-hi1-cont1">
+                        <div class="menu-hi1-cont2">
+                          <span class="menu-hi1-txt0 thq-body-small">
                             اسبريسو
                           </span>
-                          <span class="menu-text106 thq-body-small">
+                          <span class="menu-hi1-txt1 thq-body-small">
                             Espresso
                           </span>
                         </div>
-                        <span class="menu-text107 thq-body-small">
+                        <span class="menu-hi1-txt2 thq-body-small">
                           2,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card21">
+                    <div class="menu-hi2-cont0">
                       <img
                         src="https://images.msha.ke/e6816d62-6a48-4a0e-af43-8892029343a0?"
-                        class="menu-placeholder-image12 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi2-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content12">
-                        <div class="menu-title11">
-                          <span class="menu-text108 thq-body-small">
+                      <div class="menu-hi2-cont1">
+                        <div class="menu-hi2-cont2">
+                          <span class="menu-hi2-txt0 thq-body-small">
                             دبل اسبريسو
                           </span>
-                          <span class="menu-text109 thq-body-small">
+                          <span class="menu-hi2-txt1 thq-body-small">
                             Double Espresso
                           </span>
                         </div>
-                        <span class="menu-text110 thq-body-small">
+                        <span class="menu-hi2-txt2 thq-body-small">
                           3,500 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card31">
+                    <div class="menu-hi3-cont0">
                       <img
                         src="https://images.msha.ke/598d514d-632e-4428-83f6-c23c97de55db?"
-                        class="menu-placeholder-image13 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi3-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content13">
-                        <div class="menu-title12">
-                          <span class="menu-text111 thq-body-small">لاتيه</span>
-                          <span class="menu-text112 thq-body-small">Latte</span>
+                      <div class="menu-hi3-cont1">
+                        <div class="menu-hi3-cont2">
+                          <span class="menu-hi3-txt0 thq-body-small">
+                            لاتيه
+                          </span>
+                          <span class="menu-hi3-txt1 thq-body-small">
+                            Latte
+                          </span>
                         </div>
-                        <span class="menu-text113 thq-body-small">
+                        <span class="menu-hi3-txt2 thq-body-small">
                           4,500 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card41">
+                    <div class="menu-hi4-cont0">
                       <img
                         src="https://images.msha.ke/e7cfad15-c777-4069-94a4-e26eff74ec50?"
-                        class="menu-placeholder-image14 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi4-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content14">
-                        <div class="menu-title13">
-                          <span class="menu-text114 thq-body-small">
+                      <div class="menu-hi4-cont1">
+                        <div class="menu-hi4-cont2">
+                          <span class="menu-hi4-txt0 thq-body-small">
                             أمريكانو
                           </span>
-                          <span class="menu-text115 thq-body-small">
+                          <span class="menu-hi4-txt1 thq-body-small">
                             Americano
                           </span>
                         </div>
-                        <span class="menu-text116 thq-body-small">
+                        <span class="menu-hi4-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card51">
+                    <div class="menu-hi5-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image15 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi5-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content15">
-                        <div class="menu-title14">
-                          <span class="menu-text117 thq-body-small">
+                      <div class="menu-hi5-cont1">
+                        <div class="menu-hi5-cont2">
+                          <span class="menu-hi5-txt0 thq-body-small">
                             كورتادو
                           </span>
-                          <span class="menu-text118 thq-body-small">
+                          <span class="menu-hi5-txt1 thq-body-small">
                             Cortado
                           </span>
                         </div>
-                        <span class="menu-text119 thq-body-small">
+                        <span class="menu-hi5-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card61">
+                    <div class="menu-hi6-cont0">
                       <img
                         src="https://images.msha.ke/e9ede42e-027a-42a7-911f-6cf48cbbbd83?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image16 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi6-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content16">
-                        <div class="menu-title15">
-                          <span class="menu-text120 thq-body-small">
+                      <div class="menu-hi6-cont1">
+                        <div class="menu-hi6-cont2">
+                          <span class="menu-hi6-txt0 thq-body-small">
                             سبانش لاتيه
                           </span>
-                          <span class="menu-text121 thq-body-small">
+                          <span class="menu-hi6-txt1 thq-body-small">
                             Spanish Latte
                           </span>
                         </div>
-                        <span class="menu-text122 thq-body-small">
+                        <span class="menu-hi6-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card71">
+                    <div class="menu-hi7-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image17 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi7-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content17">
-                        <div class="menu-title16">
-                          <span class="menu-text123 thq-body-small">موكا</span>
-                          <span class="menu-text124 thq-body-small">Mocha</span>
+                      <div class="menu-hi7-cont1">
+                        <div class="menu-hi7-cont2">
+                          <span class="menu-hi7-txt0 thq-body-small">موكا</span>
+                          <span class="menu-hi7-txt1 thq-body-small">
+                            Mocha
+                          </span>
                         </div>
-                        <span class="menu-text125 thq-body-small">
+                        <span class="menu-hi7-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card81">
+                    <div class="menu-hi8-cont0">
                       <img
                         src="https://images.msha.ke/e9ede42e-027a-42a7-911f-6cf48cbbbd83?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image18 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi8-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content18">
-                        <div class="menu-title17">
-                          <span class="menu-text126 thq-body-small">
+                      <div class="menu-hi8-cont1">
+                        <div class="menu-hi8-cont2">
+                          <span class="menu-hi8-txt0 thq-body-small">
                             إيرا لاتيه
                           </span>
-                          <span class="menu-text127 thq-body-small">
+                          <span class="menu-hi8-txt1 thq-body-small">
                             Erā Latte
                           </span>
                         </div>
-                        <span class="menu-text128 thq-body-small">
+                        <span class="menu-hi8-txt2 thq-body-small">
                           5,500 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card91">
+                    <div class="menu-hi9-cont0">
                       <img
                         src="https://images.msha.ke/e9ede42e-027a-42a7-911f-6cf48cbbbd83?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image19 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi9-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content19">
-                        <div class="menu-title18">
-                          <span class="menu-text129 thq-body-small">
+                      <div class="menu-hi9-cont1">
+                        <div class="menu-hi9-cont2">
+                          <span class="menu-hi9-txt0 thq-body-small">
                             سوبر لاتيه
                           </span>
-                          <span class="menu-text130 thq-body-small">
+                          <span class="menu-hi9-txt1 thq-body-small">
                             Super Latte
                           </span>
                         </div>
-                        <span class="menu-text131 thq-body-small">
+                        <span class="menu-hi9-txt2 thq-body-small">
                           5,500 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card101">
+                    <div class="menu-hi10-cont0">
                       <img
                         src="https://images.msha.ke/3f2d8d93-27eb-4c5a-8db0-1981350af0d0?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image20 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi10-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content20">
-                        <div class="menu-title19">
-                          <span class="menu-text132 thq-body-small">
+                      <div class="menu-hi10-cont1">
+                        <div class="menu-hi10-cont2">
+                          <span class="menu-hi10-txt0 thq-body-small">
                             لاتيه بستاشيو
                           </span>
-                          <span class="menu-text133 thq-body-small">
+                          <span class="menu-hi10-txt1 thq-body-small">
                             Pistachio Latte
                           </span>
                         </div>
-                        <span class="menu-text134 thq-body-small">
+                        <span class="menu-hi10-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card111">
+                    <div class="menu-hi11-cont0">
                       <img
                         src="https://images.msha.ke/3f2d8d93-27eb-4c5a-8db0-1981350af0d0?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image21 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi11-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content21">
-                        <div class="menu-title20">
-                          <span class="menu-text135 thq-body-small">
+                      <div class="menu-hi11-cont1">
+                        <div class="menu-hi11-cont2">
+                          <span class="menu-hi11-txt0 thq-body-small">
                             ماتشا لاتيه
                           </span>
-                          <span class="menu-text136 thq-body-small">
+                          <span class="menu-hi11-txt1 thq-body-small">
                             Matcha Latte
                           </span>
                         </div>
-                        <span class="menu-text137 thq-body-small">
+                        <span class="menu-hi11-txt2 thq-body-small">
                           5,500 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card121">
+                    <div class="menu-hi12-cont0">
                       <img
                         src="https://images.msha.ke/f749aaa8-d1e4-4770-8fed-6220380b76af?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image22 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi12-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content22">
-                        <div class="menu-title21">
-                          <span class="menu-text138 thq-body-small">
+                      <div class="menu-hi12-cont1">
+                        <div class="menu-hi12-cont2">
+                          <span class="menu-hi12-txt0 thq-body-small">
                             هوت چوكليت
                           </span>
-                          <span class="menu-text139 thq-body-small">
+                          <span class="menu-hi12-txt1 thq-body-small">
                             Hot Chocolate
                           </span>
                         </div>
-                        <span class="menu-text140 thq-body-small">
+                        <span class="menu-hi12-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card131">
+                    <div class="menu-hi13-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image23 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi13-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content23">
-                        <div class="menu-title22">
-                          <span class="menu-text141 thq-body-small">
+                      <div class="menu-hi13-cont1">
+                        <div class="menu-hi13-cont2">
+                          <span class="menu-hi13-txt0 thq-body-small">
                             قهوه تركيه
                           </span>
-                          <span class="menu-text142 thq-body-small">
+                          <span class="menu-text3 thq-body-small">
                             Turkish Coffee
                           </span>
                         </div>
-                        <span class="menu-text143 thq-body-small">
+                        <span class="menu-hi13-txt2 thq-body-small">
                           3,500 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card14">
+                    <div class="menu-hi14-cont0">
                       <img
                         src="https://images.msha.ke/efd89512-2e40-4f63-8b5a-e78b136956fa?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image24 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi14-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content24">
-                        <div class="menu-title23">
-                          <span class="menu-text144 thq-body-small">شاي</span>
-                          <span class="menu-text145 thq-body-small">Tea</span>
+                      <div class="menu-hi14-cont1">
+                        <div class="menu-hi14-cont2">
+                          <span class="menu-hi14-txt0 thq-body-small">شاي</span>
+                          <span class="menu-hi14-txt1 thq-body-small">Tea</span>
                         </div>
-                        <span class="menu-text146 thq-body-small">
+                        <span class="menu-hi14-txt2 thq-body-small">
                           1,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card15">
+                    <div class="menu-hi15-cont0">
                       <img
                         src="https://images.msha.ke/9ffc7886-7a6b-417d-9a0e-e63e7c18f4e9?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image25 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi15-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content25">
-                        <div class="menu-title24">
-                          <span class="menu-text147 thq-body-small">
+                      <div class="menu-hi15-cont1">
+                        <div class="menu-hi15-cont2">
+                          <span class="menu-hi15-txt0 thq-body-small">
                             شاي ياباني
                           </span>
-                          <span class="menu-text148 thq-body-small">
+                          <span class="menu-hi15-txt1 thq-body-small">
                             Japanese Tea
                           </span>
                         </div>
-                        <span class="menu-text149 thq-body-small">
+                        <span class="menu-hi15-txt2 thq-body-small">
                           2,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div id="cold"  <!-- class="menu-card16"> -->   class="page-section"
+                    <div id="cold" class="menu-hi16-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image26 thq-img-round thq-img-ratio-1-1"
+                        class="menu-hi16-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content26">
-                        <div class="menu-title25">
-                          <span class="menu-text150 thq-body-small">
+                      <div class="menu-hi16-cont1">
+                        <div class="menu-hi16-cont2">
+                          <span class="menu-hi16-txt0 thq-body-small">
                             حليب مبخر
                           </span>
-                          <span class="menu-text151 thq-body-small">
+                          <span class="menu-hi16-txt1 thq-body-small">
                             Steamed Milk
                           </span>
                         </div>
-                        <span class="menu-text152 thq-body-small">
+                        <span class="menu-hi16-txt2 thq-body-small">
                           1,500 IQD
                         </span>
                       </div>
@@ -513,387 +399,389 @@
                   </div>
                 </div>
               </div>
-              <div class="menu-cold">
-                <h1 class="menu-text153">Cold Drinks - مشروبات باردة</h1>
-                <div class="menu-row2">
-                  <div class="menu-container17">
-                    <div class="menu-card18">
+              <div class="menu-cold-cont">
+                <h1 class="menu-cold-t">Cold Drinks - مشروبات باردة</h1>
+                <div class="menu-cold-items0">
+                  <div class="menu-cold-items1">
+                    <div class="menu-c1-cont0">
                       <img
                         src="https://images.msha.ke/cf016699-0f21-4404-8d4e-1b91764ac85b?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image27 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c1-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content27">
-                        <div class="menu-title26">
-                          <span class="menu-text154 thq-body-small">
+                      <div class="menu-c1-cont1">
+                        <div class="menu-c1-cont2">
+                          <span class="menu-c1-txt0 thq-body-small">
                             آيس لاتيه
                           </span>
-                          <span class="menu-text155 thq-body-small">
+                          <span class="menu-c1-txt1 thq-body-small">
                             Ice Latte
                           </span>
                         </div>
-                        <span class="menu-text156 thq-body-small">
+                        <span class="menu-c1-txt2 thq-body-small">
                           4,500 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card22">
+                    <div class="menu-c2-cont0">
                       <img
                         src="https://images.msha.ke/fdf2ae87-bc16-49b1-bafd-c8d9c4d65290?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image28 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c2-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content28">
-                        <div class="menu-title27">
-                          <span class="menu-text157 thq-body-small">
+                      <div class="menu-c2-cont1">
+                        <div class="menu-c2-cont2">
+                          <span class="menu-c2-txt0 thq-body-small">
                             آيس امريكانو
                           </span>
-                          <span class="menu-text158 thq-body-small">
+                          <span class="menu-c2-txt1 thq-body-small">
                             Ice Americano
                           </span>
                         </div>
-                        <span class="menu-text159 thq-body-small">
+                        <span class="menu-c3-txt21 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card32">
+                    <div class="menu-c3-cont0">
                       <img
                         src="https://images.msha.ke/5d920a7c-d7d6-4b3d-aeeb-724b53d32687?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image29 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c3-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content29">
-                        <div class="menu-title28">
-                          <span class="menu-text160 thq-body-small">
+                      <div class="menu-c3-cont1">
+                        <div class="menu-c3-cont2">
+                          <span class="menu-c3-txt0 thq-body-small">
                             آيس لاتيه بستاشيو
                           </span>
-                          <span class="menu-text161 thq-body-small">
+                          <span class="menu-c3-txt1 thq-body-small">
                             Ice Latte Pistachio
                           </span>
                         </div>
-                        <span class="menu-text162 thq-body-small">
+                        <span class="menu-c3-txt22 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card42">
+                    <div class="menu-c4-cont0">
                       <img
                         src="https://images.msha.ke/6e2c52a5-b85a-4f99-b2ff-c10ecf07b28b?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image30 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c4-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content30">
-                        <div class="menu-title29">
-                          <span class="menu-text163 thq-body-small">
+                      <div class="menu-c4-cont1">
+                        <div class="menu-c4-cont2">
+                          <span class="menu-c4-txt0 thq-body-small">
                             آيس موكا
                           </span>
-                          <span class="menu-text164 thq-body-small">
+                          <span class="menu-c4-txt1 thq-body-small">
                             Ice Mocha
                           </span>
                         </div>
-                        <span class="menu-text165 thq-body-small">
+                        <span class="menu-c4-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card52">
+                    <div class="menu-c5-cont0">
                       <img
                         src="https://images.msha.ke/cf016699-0f21-4404-8d4e-1b91764ac85b?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image31 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c5-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content31">
-                        <div class="menu-title30">
-                          <span class="menu-text166 thq-body-small">
+                      <div class="menu-c5-cont1">
+                        <div class="menu-c5-cont2">
+                          <span class="menu-c5-txt0 thq-body-small">
                             آيس سوبر لاتيه
                           </span>
-                          <span class="menu-text167 thq-body-small">
+                          <span class="menu-c5-txt1 thq-body-small">
                             Ice Super Latte
                           </span>
                         </div>
-                        <span class="menu-text168 thq-body-small">
+                        <span class="menu-c5-txt2 thq-body-small">
                           5,500 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card62">
+                    <div class="menu-c6-cont0">
                       <img
                         src="https://images.msha.ke/cf016699-0f21-4404-8d4e-1b91764ac85b?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image32 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c6-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content32">
-                        <div class="menu-title31">
-                          <span class="menu-text169 thq-body-small">
+                      <div class="menu-c6-cont1">
+                        <div class="menu-c6-cont2">
+                          <span class="menu-c6-txt0 thq-body-small">
                             آيس إيرا لاتيه
                           </span>
-                          <span class="menu-text170 thq-body-small">
+                          <span class="menu-c6-txt1 thq-body-small">
                             Ice Erā Latte
                           </span>
                         </div>
-                        <span class="menu-text171 thq-body-small">
+                        <span class="menu-c6-txt2 thq-body-small">
                           5,500 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card72">
+                    <div class="menu-c7-cont0">
                       <img
                         src="https://images.msha.ke/5d920a7c-d7d6-4b3d-aeeb-724b53d32687?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image33 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c7-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content33">
-                        <div class="menu-title32">
-                          <span class="menu-text172 thq-body-small">
+                      <div class="menu-c7-cont1">
+                        <div class="menu-c7-cont2">
+                          <span class="menu-c7-txt0 thq-body-small">
                             آيس لاتيه ماتشا
                           </span>
-                          <span class="menu-text173 thq-body-small">
+                          <span class="menu-c7-txt1 thq-body-small">
                             Ice Latte Matcha
                           </span>
                         </div>
-                        <span class="menu-text174 thq-body-small">
+                        <span class="menu-c7-txt2 thq-body-small">
                           5,500 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card82">
+                    <div class="menu-c8-cont0">
                       <img
                         src="https://images.msha.ke/cf016699-0f21-4404-8d4e-1b91764ac85b?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image34 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c8-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content34">
-                        <div class="menu-title33">
-                          <span class="menu-text175 thq-body-small">
+                      <div class="menu-c8-cont1">
+                        <div class="menu-c8-cont2">
+                          <span class="menu-c8-txt0 thq-body-small">
                             آيس سبانش لاتيه
                           </span>
-                          <span class="menu-text176 thq-body-small">
+                          <span class="menu-c8-txt1 thq-body-small">
                             Ice Spanish Latte
                           </span>
                         </div>
-                        <span class="menu-text177 thq-body-small">
+                        <span class="menu-c8-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card92">
+                    <div class="menu-c9-cont0">
                       <img
                         src="https://images.msha.ke/2378cfa3-8c2b-42c6-83a2-35e1d03d04b8?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image35 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c9-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content35">
-                        <div class="menu-title34">
-                          <span class="menu-text178 thq-body-small">
+                      <div class="menu-c9-cont1">
+                        <div class="menu-c9-cont2">
+                          <span class="menu-c9-txt0 thq-body-small">
                             آيس چوكليت
                           </span>
-                          <span class="menu-text179 thq-body-small">
+                          <span class="menu-c9-txt1 thq-body-small">
                             Ice Chocolate
                           </span>
                         </div>
-                        <span class="menu-text180 thq-body-small">
+                        <span class="menu-c9-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card102">
+                    <div class="menu-c10-cont0">
                       <img
                         src="https://images.msha.ke/1787b9b6-2a84-430b-84b6-7dcb3995fa77?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image36 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c10-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content36">
-                        <div class="menu-title35">
-                          <span class="menu-text181 thq-body-small">
+                      <div class="menu-c10-cont1">
+                        <div class="menu-c10-cont2">
+                          <span class="menu-c10-txt0 thq-body-small">
                             آيس تي خوخ
                           </span>
-                          <span class="menu-text182 thq-body-small">
+                          <span class="menu-c10-txt1 thq-body-small">
                             Peach Ice Tea
                           </span>
                         </div>
-                        <span class="menu-text183 thq-body-small">
+                        <span class="menu-c10-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card112">
+                    <div class="menu-c11-cont0">
                       <img
                         src="https://images.msha.ke/5cd013aa-7a29-4f04-8e1c-4337f42b3b48?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image37 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c11-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content37">
-                        <div class="menu-title36">
-                          <span class="menu-text184 thq-body-small">
+                      <div class="menu-c11-cont1">
+                        <div class="menu-c11-cont2">
+                          <span class="menu-c11-txt0 thq-body-small">
                             آيس تي باشن فروت
                           </span>
-                          <span class="menu-text185 thq-body-small">
+                          <span class="menu-c11-txt1 thq-body-small">
                             Passion fruit Ice Tea
                           </span>
                         </div>
-                        <span class="menu-text186 thq-body-small">
+                        <span class="menu-c11-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card122">
+                    <div class="menu-c12-cont0">
                       <img
                         src="https://images.msha.ke/caa8b089-2ed5-4fa6-979d-e046865b80ab?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image38 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c12-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content38">
-                        <div class="menu-title37">
-                          <span class="menu-text187 thq-body-small">
+                      <div class="menu-c12-cont1">
+                        <div class="menu-c12-cont2">
+                          <span class="menu-c12-txt0 thq-body-small">
                             آيس تي مانجو
                           </span>
-                          <span class="menu-text188 thq-body-small">
+                          <span class="menu-c12-txt1 thq-body-small">
                             Mango Ice Tea
                           </span>
                         </div>
-                        <span class="menu-text189 thq-body-small">
+                        <span class="menu-c12-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div id="mojito" class="menu-card132">
+                    <div id="mojito" class="menu-c13-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image39 thq-img-round thq-img-ratio-1-1"
+                        class="menu-c13-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content39">
-                        <div class="menu-title38">
-                          <span class="menu-text190 thq-body-small">ماء</span>
-                          <span class="menu-text191 thq-body-small">Water</span>
+                      <div class="menu-c13-cont1">
+                        <div class="menu-c13-cont2">
+                          <span class="menu-c13-txt0 thq-body-small">ماء</span>
+                          <span class="menu-text4 thq-body-small">Water</span>
                         </div>
-                        <span class="menu-text192 thq-body-small">500 IQD</span>
+                        <span class="menu-c13-txt2 thq-body-small">
+                          500 IQD
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="menu-mojito">
-                <h1 class="menu-text193">Mojito - موهيتو</h1>
-                <div class="menu-row3">
-                  <div class="menu-container18">
-                    <div class="menu-card19">
+              <div class="menu-mojito-cont">
+                <h1 class="menu-mojito-t">Mojito - موهيتو</h1>
+                <div class="menu-mojito-items0">
+                  <div class="menu-mojito-items1">
+                    <div class="menu-m1-cont0">
                       <img
                         src="https://images.msha.ke/6f2ab151-6b00-466d-b8db-b607e7026f09?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image40 thq-img-round thq-img-ratio-1-1"
+                        class="menu-m1-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content40">
-                        <div class="menu-title39">
-                          <span class="menu-text194 thq-body-small">
+                      <div class="menu-m1-cont1">
+                        <div class="menu-m1-cont2">
+                          <span class="menu-m1-txt0 thq-body-small">
                             موهيتو ليمون
                           </span>
-                          <span class="menu-text195 thq-body-small">
+                          <span class="menu-m1-txt1 thq-body-small">
                             Lemon Mojito
                           </span>
                         </div>
-                        <span class="menu-text196 thq-body-small">
+                        <span class="menu-m1-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card23">
+                    <div class="menu-m2-cont0">
                       <img
                         src="https://images.msha.ke/1247b7de-2d70-4463-9304-8a961797185a?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image41 thq-img-round thq-img-ratio-1-1"
+                        class="menu-m2-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content41">
-                        <div class="menu-title40">
-                          <span class="menu-text197 thq-body-small">
+                      <div class="menu-m2-cont1">
+                        <div class="menu-m2-cont2">
+                          <span class="menu-m2-txt0 thq-body-small">
                             موهيتو فراوله
                           </span>
-                          <span class="menu-text198 thq-body-small">
+                          <span class="menu-m2-txt1 thq-body-small">
                             Strawberry Mojito
                           </span>
                         </div>
-                        <span class="menu-text199 thq-body-small">
+                        <span class="menu-m2-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card33">
+                    <div class="menu-m3-cont0">
                       <img
                         src="https://images.msha.ke/46cf905a-1310-4cd1-9c80-e5ffc89e5c23?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image42 thq-img-round thq-img-ratio-1-1"
+                        class="menu-m3-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content42">
-                        <div class="menu-title41">
-                          <span class="menu-text200 thq-body-small">
+                      <div class="menu-m3-cont1">
+                        <div class="menu-m3-cont2">
+                          <span class="menu-m3-txt0 thq-body-small">
                             موهيتو مانجو
                           </span>
-                          <span class="menu-text201 thq-body-small">
+                          <span class="menu-m3-txt1 thq-body-small">
                             Mango Mojito
                           </span>
                         </div>
-                        <span class="menu-text202 thq-body-small">
+                        <span class="menu-m3-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card43">
+                    <div class="menu-m4-cont0">
                       <img
                         src="https://images.msha.ke/90df9771-f40b-4d20-80f6-5bb36b4fcbe6?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image43 thq-img-round thq-img-ratio-1-1"
+                        class="menu-m4-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content43">
-                        <div class="menu-title42">
-                          <span class="menu-text203 thq-body-small">
+                      <div class="menu-m4-cont1">
+                        <div class="menu-m4-cont2">
+                          <span class="menu-m4-txt0 thq-body-small">
                             موهيتو خوخ
                           </span>
-                          <span class="menu-text204 thq-body-small">
+                          <span class="menu-m4-txt1 thq-body-small">
                             Peach Mojito
                           </span>
                         </div>
-                        <span class="menu-text205 thq-body-small">
+                        <span class="menu-m4-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card53">
+                    <div class="menu-m5-cont0">
                       <img
                         src="https://images.msha.ke/9f78aa0a-cb3d-4c5e-9f01-2727725c2a46?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image44 thq-img-round thq-img-ratio-1-1"
+                        class="menu-m5-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content44">
-                        <div class="menu-title43">
-                          <span class="menu-text206 thq-body-small">
+                      <div class="menu-m5-cont1">
+                        <div class="menu-m5-cont2">
+                          <span class="menu-m5-txt0 thq-body-small">
                             موهيتو أناناس
                           </span>
-                          <span class="menu-text207 thq-body-small">
+                          <span class="menu-m5-txt1 thq-body-small">
                             Pineapple Mojito
                           </span>
                         </div>
-                        <span class="menu-text208 thq-body-small">
+                        <span class="menu-m5-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card63">
+                    <div class="menu-m6-con0">
                       <img
                         src="https://images.msha.ke/97788858-5814-4b66-8e82-a6d7ba766da2?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image45 thq-img-round thq-img-ratio-1-1"
+                        class="menu-m6 thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content45">
-                        <div class="menu-title44">
-                          <span class="menu-text209 thq-body-small">
+                      <div class="menu-m6-cont1">
+                        <div class="menu-m6-cont2">
+                          <span class="menu-m6-txt0 thq-body-small">
                             موهيتو بلاك بيري
                           </span>
-                          <span class="menu-text210 thq-body-small">
+                          <span class="menu-m6-txt1 thq-body-small">
                             Blackberry Mojito
                           </span>
                         </div>
-                        <span class="menu-text211 thq-body-small">
+                        <span class="menu-m6-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div id="smoothie" class="menu-card73">
+                    <div id="smoothie" class="menu-m7-cont0">
                       <img
                         src="https://images.msha.ke/343cec20-6607-4344-ab23-7a035acf55c7?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image46 thq-img-round thq-img-ratio-1-1"
+                        class="menu-m7-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content46">
-                        <div class="menu-title45">
-                          <span class="menu-text212 thq-body-small">
+                      <div class="menu-m7-cont1">
+                        <div class="menu-m7-cont2">
+                          <span class="menu-m7-txt0 thq-body-small">
                             موهيتو باشن فروت
                           </span>
-                          <span class="menu-text213 thq-body-small">
+                          <span class="menu-m7-txt1 thq-body-small">
                             Passion fruit Mojito
                           </span>
                         </div>
-                        <span class="menu-text214 thq-body-small">
+                        <span class="menu-m7-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
@@ -901,82 +789,82 @@
                   </div>
                 </div>
               </div>
-              <div class="menu-smoothie">
-                <h1 class="menu-text215">Smoothie - سموذي</h1>
-                <div class="menu-row4">
-                  <div class="menu-container19">
-                    <div class="menu-card110">
+              <div class="menu-smoothie-cont">
+                <h1 class="menu-smoothie-t">Smoothie - سموذي</h1>
+                <div class="menu-smoothie-items0">
+                  <div class="menu-smoothie-items1">
+                    <div class="menu-s1-cont0">
                       <img
                         src="https://images.msha.ke/95584208-f7fd-4ef8-9ff6-441929702fa5?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image47 thq-img-round thq-img-ratio-1-1"
+                        class="menu-s1-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content47">
-                        <div class="menu-title46">
-                          <span class="menu-text216 thq-body-small">
+                      <div class="menu-s1-cont1">
+                        <div class="menu-s1-cont2">
+                          <span class="menu-s1-txt0 thq-body-small">
                             سموذي فراوله
                           </span>
-                          <span class="menu-text217 thq-body-small">
+                          <span class="menu-s1-txt1 thq-body-small">
                             Strawberry Smoothie
                           </span>
                         </div>
-                        <span class="menu-text218 thq-body-small">
+                        <span class="menu-s1-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card24">
+                    <div class="menu-s2-cont0">
                       <img
                         src="https://images.msha.ke/2d259b1b-761e-452d-83e0-ad9c3e6a2ec0?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image48 thq-img-round thq-img-ratio-1-1"
+                        class="menu-s2-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content48">
-                        <div class="menu-title47">
-                          <span class="menu-text219 thq-body-small">
+                      <div class="menu-s2-cont1">
+                        <div class="menu-s2-cont2">
+                          <span class="menu-s2-txt0 thq-body-small">
                             سموذي مانجو
                           </span>
-                          <span class="menu-text220 thq-body-small">
+                          <span class="menu-s2-txt1 thq-body-small">
                             Mango Smoothie
                           </span>
                         </div>
-                        <span class="menu-text221 thq-body-small">
+                        <span class="menu-s2-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card34">
+                    <div class="menu-s3-cont0">
                       <img
                         src="https://images.msha.ke/1b1a7b6e-517c-4a5c-8a33-918a06d08970?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image49 thq-img-round thq-img-ratio-1-1"
+                        class="menu-s3-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content49">
-                        <div class="menu-title48">
-                          <span class="menu-text222 thq-body-small">
+                      <div class="menu-s3-cont1">
+                        <div class="menu-s3-cont2">
+                          <span class="menu-s3-txt0 thq-body-small">
                             سموذي خوخ
                           </span>
-                          <span class="menu-text223 thq-body-small">
+                          <span class="menu-s3-txt1 thq-body-small">
                             Peach Smoothie
                           </span>
                         </div>
-                        <span class="menu-text224 thq-body-small">
+                        <span class="menu-s3-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div id="cocktails" class="menu-card44">
+                    <div id="cocktails" class="menu-s4-cont0">
                       <img
                         src="https://images.msha.ke/ab7ff633-9ed8-47b9-86ea-29d8735a8c7b?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image50 thq-img-round thq-img-ratio-1-1"
+                        class="menu-s4-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content50">
-                        <div class="menu-title49">
-                          <span class="menu-text225 thq-body-small">
+                      <div class="menu-s4-cont1">
+                        <div class="menu-s4-cont2">
+                          <span class="menu-s4-txt0 thq-body-small">
                             سموذي باشن فروت
                           </span>
-                          <span class="menu-text226 thq-body-small">
+                          <span class="menu-s4-txt1 thq-body-small">
                             Passion fruit Smoothie
                           </span>
                         </div>
-                        <span class="menu-text227 thq-body-small">
+                        <span class="menu-s4-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
@@ -984,156 +872,156 @@
                   </div>
                 </div>
               </div>
-              <div class="menu-cocktails">
-                <h1 class="menu-text228">Cocktails - كوكتيل</h1>
-                <div class="menu-row5">
-                  <div class="menu-container20">
-                    <div class="menu-card113">
+              <div class="menu-cocktails-cont">
+                <h1 class="menu-cocktails-t">Cocktails - كوكتيل</h1>
+                <div class="menu-cocktails-items0">
+                  <div class="menu-cocktails-items1">
+                    <div class="menu-ct1-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image51 thq-img-round thq-img-ratio-1-1"
+                        class="menu-ct1-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content51">
-                        <div class="menu-title50">
-                          <span class="menu-text229 thq-body-small">
+                      <div class="menu-ct1-cont1">
+                        <div class="menu-ct1-cont2">
+                          <span class="menu-ct1-txt0 thq-body-small">
                             ساسو يونا
                           </span>
-                          <span class="menu-text230 thq-body-small">
+                          <span class="menu-ct1-txt1 thq-body-small">
                             Sasu yōna
                           </span>
                         </div>
-                        <span class="menu-text231 thq-body-small">
+                        <span class="menu-ct1-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card25">
+                    <div class="menu-ct2-cont0">
                       <img
                         src="https://images.msha.ke/34639322-9b4d-4d5d-96c4-0383135f0d1a?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image52 thq-img-round thq-img-ratio-1-1"
+                        class="menu-ct2-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content52">
-                        <div class="menu-title51">
-                          <span class="menu-text232 thq-body-small">
+                      <div class="menu-ct2-cont1">
+                        <div class="menu-ct2-cont2">
+                          <span class="menu-ct2-txt0 thq-body-small">
                             مكس تايو
                           </span>
-                          <span class="menu-text233 thq-body-small">
+                          <span class="menu-ct2-txt1 thq-body-small">
                             Mix Taiyo
                           </span>
                         </div>
-                        <span class="menu-text234 thq-body-small">
+                        <span class="menu-ct2-txt2 thq-body-small">
                           6,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card35">
+                    <div class="menu-ct3-cont0">
                       <img
                         src="https://images.msha.ke/f61f2e0c-7a0d-479d-915f-e6311175f6a7?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image53 thq-img-round thq-img-ratio-1-1"
+                        class="menu-ct3-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content53">
-                        <div class="menu-title52">
-                          <span class="menu-text235 thq-body-small">
+                      <div class="menu-ct3-cont1">
+                        <div class="menu-ct3-cont2">
+                          <span class="menu-ct3-txt0 thq-body-small">
                             بيناكولادا
                           </span>
-                          <span class="menu-text236 thq-body-small">
+                          <span class="menu-ct3-txt1 thq-body-small">
                             Piña Colada
                           </span>
                         </div>
-                        <span class="menu-text237 thq-body-small">
+                        <span class="menu-ct3-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card45">
+                    <div class="menu-ct4-cont0">
                       <img
                         src="https://images.msha.ke/8ff40541-b004-4f83-8edd-4054fc127184?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image54 thq-img-round thq-img-ratio-1-1"
+                        class="menu-ct4-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content54">
-                        <div class="menu-title53">
-                          <span class="menu-text238 thq-body-small">
+                      <div class="menu-ct4-cont1">
+                        <div class="menu-ct4-cont2">
+                          <span class="menu-ct4-txt0 thq-body-small">
                             ليمون ونعناع
                           </span>
-                          <span class="menu-text239 thq-body-small">
+                          <span class="menu-ct4-txt1 thq-body-small">
                             Lemon &amp; Mint
                           </span>
                         </div>
-                        <span class="menu-text240 thq-body-small">
+                        <span class="menu-ct4-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card54">
+                    <div class="menu-ct5-cont0">
                       <img
                         src="https://images.msha.ke/19690eca-6653-4649-aa0e-bc9f258e59b4?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image55 thq-img-round thq-img-ratio-1-1"
+                        class="menu-ct5-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content55">
-                        <div class="menu-title54">
-                          <span class="menu-text241 thq-body-small">
+                      <div class="menu-ct5-cont1">
+                        <div class="menu-ct5-cont2">
+                          <span class="menu-ct5-txt0 thq-body-small">
                             سكاي مكس
                           </span>
-                          <span class="menu-text242 thq-body-small">
+                          <span class="menu-ct5-txt1 thq-body-small">
                             Sky Mix
                           </span>
                         </div>
-                        <span class="menu-text243 thq-body-small">
+                        <span class="menu-ct5-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card64">
+                    <div class="menu-ct6-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image56 thq-img-round thq-img-ratio-1-1"
+                        class="menu-ct6-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content56">
-                        <div class="menu-title55">
-                          <span class="menu-text244 thq-body-small">
+                      <div class="menu-ct6-cont1">
+                        <div class="menu-ct6-cont2">
+                          <span class="menu-ct6-txt0 thq-body-small">
                             سن سيت
                           </span>
-                          <span class="menu-text245 thq-body-small">
+                          <span class="menu-ct7-txt11 thq-body-small">
                             Sunset 🍓
                           </span>
                         </div>
-                        <span class="menu-text246 thq-body-small">
+                        <span class="menu-ct8-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card74">
+                    <div class="menu-ct7-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image57 thq-img-round thq-img-ratio-1-1"
+                        class="menu-ct7-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content57">
-                        <div class="menu-title56">
-                          <span class="menu-text247 thq-body-small">
+                      <div class="menu-ct7-cont1">
+                        <div class="menu-ct7-cont2">
+                          <span class="menu-ct7-txt0 thq-body-small">
                             سن رايز
                           </span>
-                          <span class="menu-text248 thq-body-small">
+                          <span class="menu-ct7-txt12 thq-body-small">
                             Sunrise 🍋
                           </span>
                         </div>
-                        <span class="menu-text249 thq-body-small">
+                        <span class="menu-ct7-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div id="energy" class="menu-card83">
+                    <div id="energy" class="menu-ct8-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image58 thq-img-round thq-img-ratio-1-1"
+                        class="menu-ct8-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content58">
-                        <div class="menu-title57">
-                          <span class="menu-text250 thq-body-small">اوشن</span>
-                          <span class="menu-text251 thq-body-small">
+                      <div class="menu-ct8-cont1">
+                        <div class="menu-ct8-cont2">
+                          <span class="menu-ct8-txt0 thq-body-small">اوشن</span>
+                          <span class="menu-ct8-txt1 thq-body-small">
                             Ocean 🌊
                           </span>
                         </div>
-                        <span class="menu-text252 thq-body-small">
+                        <span class="menu-ct9-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
@@ -1141,82 +1029,82 @@
                   </div>
                 </div>
               </div>
-              <div class="menu-energy">
-                <h1 class="menu-text253">Energy Drinks - مشروبات طاقة</h1>
-                <div class="menu-row6">
-                  <div class="menu-container21">
-                    <div class="menu-card114">
+              <div class="menu-energy-cont">
+                <h1 class="menu-energy-t">Energy Drinks - مشروبات طاقة</h1>
+                <div class="menu-energy-items0">
+                  <div class="menu-energy-items1">
+                    <div class="menu-e1-cont0">
                       <img
                         src="https://images.msha.ke/a3cad8c4-cbf6-4f4f-82e0-7af2396e4b07?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image59 thq-img-round thq-img-ratio-1-1"
+                        class="menu-e1-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content59">
-                        <div class="menu-title58">
-                          <span class="menu-text254 thq-body-small">
+                      <div class="menu-e1-cont1">
+                        <div class="menu-e1-cont2">
+                          <span class="menu-e1-txt0 thq-body-small">
                             ريدبول بلاك
                           </span>
-                          <span class="menu-text255 thq-body-small">
+                          <span class="menu-e1-txt1 thq-body-small">
                             Red Bull Black
                           </span>
                         </div>
-                        <span class="menu-text256 thq-body-small">
+                        <span class="menu-e1-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card26">
+                    <div class="menu-e2-cont0">
                       <img
                         src="https://images.msha.ke/c9a8437d-eb12-478c-b1cd-6fa7aeece793?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image60 thq-img-round thq-img-ratio-1-1"
+                        class="menu-e2-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content60">
-                        <div class="menu-title59">
-                          <span class="menu-text257 thq-body-small">
+                      <div class="menu-e2-cont1">
+                        <div class="menu-e2-cont2">
+                          <span class="menu-e2-txt0 thq-body-small">
                             ريدبول اچيكو
                           </span>
-                          <span class="menu-text258 thq-body-small">
+                          <span class="menu-e2-txt1 thq-body-small">
                             Red Bull Ichigo
                           </span>
                         </div>
-                        <span class="menu-text259 thq-body-small">
+                        <span class="menu-e2-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card36">
+                    <div class="menu-e3-cont0">
                       <img
                         src="https://images.msha.ke/3e5a94a3-b10d-455a-b486-c6a8b0c69a4b?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image61 thq-img-round thq-img-ratio-1-1"
+                        class="menu-e3-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content61">
-                        <div class="menu-title60">
-                          <span class="menu-text260 thq-body-small">
+                      <div class="menu-e3-cont1">
+                        <div class="menu-e3-cont2">
+                          <span class="menu-e3-txt0 thq-body-small">
                             مكسيكي
                           </span>
-                          <span class="menu-text261 thq-body-small">
+                          <span class="menu-e3-txt1 thq-body-small">
                             Mexican
                           </span>
                         </div>
-                        <span class="menu-text262 thq-body-small">
+                        <span class="menu-e3-txt2 thq-body-small">
                           3,500 IQD
                         </span>
                       </div>
                     </div>
-                    <div id="brewing" class="menu-card46">
+                    <div id="brewing" class="menu-e4-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image62 thq-img-round thq-img-ratio-1-1"
+                        class="menu-e4-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content62">
-                        <div class="menu-title61">
-                          <span class="menu-text263 thq-body-small">
+                      <div class="menu-e4-cont1">
+                        <div class="menu-e4-cont2">
+                          <span class="menu-e4-txt0 thq-body-small">
                             ريدبول
                           </span>
-                          <span class="menu-text264 thq-body-small">
+                          <span class="menu-e4-txt1 thq-body-small">
                             Red Bull
                           </span>
                         </div>
-                        <span class="menu-text265 thq-body-small">
+                        <span class="menu-e4-txt2 thq-body-small">
                           3,000 IQD
                         </span>
                       </div>
@@ -1224,78 +1112,78 @@
                   </div>
                 </div>
               </div>
-              <div class="menu-brewing">
-                <h1 class="menu-text266">Brewing - قهوة مقطره</h1>
-                <div class="menu-row7">
-                  <div class="menu-container22">
-                    <div class="menu-card115">
+              <div class="menu-brewing-cont">
+                <h1 class="menu-brewing-t">Brewing - قهوة مقطره</h1>
+                <div class="menu-brewing-items0">
+                  <div class="menu-brewing-items1">
+                    <div class="menu-b1-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image63 thq-img-round thq-img-ratio-1-1"
+                        class="menu-b1-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content63">
-                        <div class="menu-title62">
-                          <span class="menu-text267 thq-body-small">V60</span>
-                          <span class="menu-text268 thq-body-small">V60</span>
+                      <div class="menu-b1-cont1">
+                        <div class="menu-b1-cont2">
+                          <span class="menu-b1-txt0 thq-body-small">V60</span>
+                          <span class="menu-b1-txt1 thq-body-small">V60</span>
                         </div>
-                        <span class="menu-text269 thq-body-small">
+                        <span class="menu-b1-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card27">
+                    <div class="menu-b2-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image64 thq-img-round thq-img-ratio-1-1"
+                        class="menu-b2-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content64">
-                        <div class="menu-title63">
-                          <span class="menu-text270 thq-body-small">
+                      <div class="menu-b2-cont1">
+                        <div class="menu-b2-cont2">
+                          <span class="menu-b2-txt0 thq-body-small">
                             Chemex
                           </span>
-                          <span class="menu-text271 thq-body-small">
+                          <span class="menu-b2-txt1 thq-body-small">
                             Chemex
                           </span>
                         </div>
-                        <span class="menu-text272 thq-body-small">
+                        <span class="menu-b2-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card37">
+                    <div class="menu-b3-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image65 thq-img-round thq-img-ratio-1-1"
+                        class="menu-b3-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content65">
-                        <div class="menu-title64">
-                          <span class="menu-text273 thq-body-small">
+                      <div class="menu-b3-cont1">
+                        <div class="menu-b3-cont2">
+                          <span class="menu-b3-txt0 thq-body-small">
                             Cold Brew
                           </span>
-                          <span class="menu-text274 thq-body-small">
+                          <span class="menu-b3-txt1 thq-body-small">
                             Cold Brew
                           </span>
                         </div>
-                        <span class="menu-text275 thq-body-small">
+                        <span class="menu-b3-txt2 thq-body-small">
                           6,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div id="dessert" class="menu-card47">
+                    <div id="dessert" class="menu-b4-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image66 thq-img-round thq-img-ratio-1-1"
+                        class="menu-b4-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content66">
-                        <div class="menu-title65">
-                          <span class="menu-text276 thq-body-small">
+                      <div class="menu-b4-cont1">
+                        <div class="menu-b4-cont2">
+                          <span class="menu-b4-txt0 thq-body-small">
                             Aero Press
                           </span>
-                          <span class="menu-text277 thq-body-small">
+                          <span class="menu-b4-txt1 thq-body-small">
                             Aero Press
                           </span>
                         </div>
-                        <span class="menu-text278 thq-body-small">
+                        <span class="menu-b4-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
@@ -1303,116 +1191,116 @@
                   </div>
                 </div>
               </div>
-              <div class="menu-dessert">
-                <h1 class="menu-text279">Cocktails - حلويات</h1>
-                <div class="menu-row8">
-                  <div class="menu-container23">
-                    <div class="menu-card116">
+              <div class="menu-dessert-cont">
+                <h1 class="menu-dessert-t">Dessert - حلويات</h1>
+                <div class="menu-dessert-items0">
+                  <div class="menu-dessert-items1">
+                    <div class="menu-d1-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image67 thq-img-round thq-img-ratio-1-1"
+                        class="menu-d1-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content67">
-                        <div class="menu-title66">
-                          <span class="menu-text280 thq-body-small">
+                      <div class="menu-d1-cont1">
+                        <div class="menu-d1-cont2">
+                          <span class="menu-d1-txt0 thq-body-small">
                             كرواسون
                           </span>
-                          <span class="menu-text281 thq-body-small">
+                          <span class="menu-d1-txt1 thq-body-small">
                             Croissant
                           </span>
                         </div>
-                        <span class="menu-text282 thq-body-small">
+                        <span class="menu-d1-txt2 thq-body-small">
                           3,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card28">
+                    <div class="menu-d2-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image68 thq-img-round thq-img-ratio-1-1"
+                        class="menu-d2-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content68">
-                        <div class="menu-title67">
-                          <span class="menu-text283 thq-body-small">دونات</span>
-                          <span class="menu-text284 thq-body-small">Donut</span>
+                      <div class="menu-d2-cont1">
+                        <div class="menu-d2-cont2">
+                          <span class="menu-d2-txt0 thq-body-small">دونات</span>
+                          <span class="menu-d2-txt1 thq-body-small">Donut</span>
                         </div>
-                        <span class="menu-text285 thq-body-small">
+                        <span class="menu-d2-txt2 thq-body-small">
                           3,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card38">
+                    <div class="menu-d3-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image69 thq-img-round thq-img-ratio-1-1"
+                        class="menu-d3-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content69">
-                        <div class="menu-title68">
-                          <span class="menu-text286 thq-body-small">
+                      <div class="menu-d3-cont1">
+                        <div class="menu-d3-cont2">
+                          <span class="menu-d3-txt0 thq-body-small">
                             مني كيك
                           </span>
-                          <span class="menu-text287 thq-body-small">
+                          <span class="menu-d3-txt1 thq-body-small">
                             Mini Cake
                           </span>
                         </div>
-                        <span class="menu-text288 thq-body-small">
+                        <span class="menu-d3-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card48">
+                    <div class="menu-d4-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image70 thq-img-round thq-img-ratio-1-1"
+                        class="menu-d4-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content70">
-                        <div class="menu-title69">
-                          <span class="menu-text289 thq-body-small">
+                      <div class="menu-d4-cont1">
+                        <div class="menu-d4-cont2">
+                          <span class="menu-d4-txt0 thq-body-small">
                             چيز كيك
                           </span>
-                          <span class="menu-text290 thq-body-small">
+                          <span class="menu-d4-txt1 thq-body-small">
                             Cheese Cake
                           </span>
                         </div>
-                        <span class="menu-text291 thq-body-small">
+                        <span class="menu-d4-txt2 thq-body-small">
                           4,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card55">
+                    <div class="menu-d5-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image71 thq-img-round thq-img-ratio-1-1"
+                        class="menu-d5-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content71">
-                        <div class="menu-title70">
-                          <span class="menu-text292 thq-body-small">
+                      <div class="menu-d5-cont1">
+                        <div class="menu-d5-cont2">
+                          <span class="menu-d5-txt0 thq-body-small">
                             كيك ريد ڤيلڤت
                           </span>
-                          <span class="menu-text293 thq-body-small">
+                          <span class="menu-d5-txt1 thq-body-small">
                             Red Velvet Cake
                           </span>
                         </div>
-                        <span class="menu-text294 thq-body-small">
+                        <span class="menu-d5-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
                     </div>
-                    <div class="menu-card65">
+                    <div class="menu-d6-cont0">
                       <img
                         src="https://images.msha.ke/ab0bfadb-55a5-455b-b40c-b6e115995f39?auto=format%2Ccompress&amp;cs=tinysrgb&amp;q=30&amp;w=828"
-                        class="menu-placeholder-image72 thq-img-round thq-img-ratio-1-1"
+                        class="menu-d6-img thq-img-round thq-img-ratio-1-1"
                       />
-                      <div class="menu-content72">
-                        <div class="menu-title71">
-                          <span class="menu-text295 thq-body-small">
+                      <div class="menu-d6-cont1">
+                        <div class="menu-d6-cont2">
+                          <span class="menu-d6-txt0 thq-body-small">
                             سان سيباستيان
                           </span>
-                          <span class="menu-text296 thq-body-small">
+                          <span class="menu-d6-txt1 thq-body-small">
                             San Sebastian
                           </span>
                         </div>
-                        <span class="menu-text297 thq-body-small">
+                        <span class="menu-d6-txt2 thq-body-small">
                           5,000 IQD
                         </span>
                       </div>
@@ -1420,34 +1308,11 @@
                   </div>
                 </div>
               </div>
+              <div class="menu-space-bg2"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script
-      defer=""
-      src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
-    ></script>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-    <!-- This is a comment -->
-
-  <script>
-     <!-- On scroll menu link activation -->
-    $(window).scroll(function() {
-        var scrollDistance = $(window).scrollTop();
-
-        <!-- Assign active class to links while scolling -->
-        $('.page-section').each(function(i) {
-            if (($(this).position().top - 10) <= scrollDistance) {
-                $('#menu-container12 a.active').removeClass('active');
-                $('#menu-container12 a').eq(i).addClass('active');
-            }
-        });
-    }).scroll();
-  </script>
-    
   </body>
 </html>
